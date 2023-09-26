@@ -34,4 +34,32 @@ console.log("Undefined Value : " + marks);
 let phnNumber = 98564558362953n
 console.log("BigInt Value : " + phnNumber);
 
+// Non-Primitive Datatypes / Referenced Datatypes
 
+console.log();
+console.log("Non-Primitive Datatypes :");
+
+// Array 
+
+let price = [100,200,300,400];
+console.log("Array value : " + price);
+
+
+// Object
+let data = {
+    StudentName : "vishal",
+    id : "22MCA5CCM1001",
+    email : "vishalkumarsingh162@gmail.com",
+    phn : 9988776655,
+}
+console.log("Object Value : ");
+
+console.log(data);
+
+// function
+
+const print = function print(){
+    console.log("Hello World");
+}
+
+print();
