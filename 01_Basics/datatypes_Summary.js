@@ -63,3 +63,49 @@ const print = function print(){
 }
 
 print();
+
+
+// Stack and Heap Concept 
+
+/*
+
+Handling Memory Management in JavaScript
+JavaScript engines store their data in two places; the Stack Memory and the Heap Memory
+
+1. Stack : It is used to store Primitive data types, (String, boolean, number, null, undefined, bigInt)
+ It created copy of datatypes
+
+2. Heap : It is used to store Non-Predefined data types objects and functions in JavaScript.
+  It refers original value
+
+*/
+
+// Stack : 
+console.log("Stack Memory ");
+
+let devName = "Vishal singh"
+console.log(devName);
+
+let originalName = devName
+console.log(originalName);
+
+originalName = "Aman"
+console.log(originalName);
+
+// Heap :
+
+console.log("Heap Memory : ");
+
+let userOne = {
+    name : "vishal",
+    id : 123,
+    college : "Sage University",
+}
+
+console.log(userOne);
+
+console.log("After reinitializing userOne name : ");
+
+userOne.name = "Aman"
+
+console.log(userOne.name);
