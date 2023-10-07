@@ -13,3 +13,28 @@ function profile() {
 }
 
 console.log(profile());
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Working of lexical scope
+
+
+// Define a function:
+function showLastName() {
+    const lastName = "Sofela";
+    return lastName;
+  }
+  
+  // Define another function:
+  function displayFullName() {
+    const fullName = "Oluwatobi " + lastName;
+    return fullName;
+  }
+  
+  // Invoke displayFullName():
+  console.log(displayFullName());
+  
+  // The invocation above will return:
+//   Uncaught ReferenceError: lastName is not defined
