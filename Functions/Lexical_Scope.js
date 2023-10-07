@@ -23,13 +23,13 @@ console.log(profile());
 
 // Define a function:
 function showLastName() {
-    const lastName = "Sofela";
+    const lastName = "Dwayne Jhonshon";
     return lastName;
   }
   
   // Define another function:
   function displayFullName() {
-    const fullName = "Oluwatobi " + lastName;
+    const fullName = "The Rock : " + showLastName();
     return fullName;
   }
   
@@ -38,3 +38,19 @@ function showLastName() {
   
   // The invocation above will return:
 //   Uncaught ReferenceError: lastName is not defined
+
+
+// Another example of Lexical scope
+
+let friend = "Jennifer";
+
+function getFriend() {
+  console.log(friend);
+  
+  let enemy = "Peter";
+  return function getEnemy() {
+    console.log(enemy);
+  };
+}
+
+getFriend();
