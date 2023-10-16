@@ -15,3 +15,19 @@ An Immediately Invoked Function Expression (IIFE) is a JavaScript function that 
     // let phone = 'Realme'
     console.log(`My phone is ${phone}`);
 })('Apple');
+
+
+// An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. 
+
+(function () {
+    // …
+  })();
+  
+  (() => {
+    // …
+  })();
+  
+  (async () => {
+    // …
+  })();
+  
