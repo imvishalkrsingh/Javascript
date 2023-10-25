@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+
+
+</body>
+<script>
+    // creating elements 
+    const div = document.createElement('div');
+    console.log(div);
+
+    div.className = 'main'
+    div.id = Math.round(Math.random() * 100+1)
+    div.setAttribute('title', "generated title")
+
+    div.style.backgroundColor = "red"
+    div.style.padding = "12px"
+
+    // div.innerText = 'Vishal Kumar Singh'
+    const addText = document.createTextNode('Vishal Singh')
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+
+    const para = document.createElement('p')
+
+    para.id = 'para1'
+    para.style.backgroundColor = 'grey'
+    para.style.color = 'white'
+
+    // para.innerText = 'Hey this is vishal kumar singh'
+
+    const paraText = document.createTextNode('Hey this is vishal kumar singh')
+    para.appendChild(paraText)
+
+    document.body.appendChild(para)
+
+
+
+    // creating a anchor tag 
+
+    const anchor = document.createElement('h5')
+
+    const h5Text = document.createTextNode('This is paragraph which i have been created using javascript')
+
+    anchor.appendChild(h5Text)
+
+    document.body.appendChild(anchor)
+    
+
+
+
+    
+
+
+
+
+    // creating a heading 1
+    // const head1 = document.createElement('h1')
+    // console.log(head1);
+
+
+
+</script>
+</html>

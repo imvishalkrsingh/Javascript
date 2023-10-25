@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning <span style="display: none;">Test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, velit?</h2>
+        <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magni quam error.
+        </h2>
+
+        <input type="password">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">Four</li>
+        </ul>
+
+        <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thrusday</div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+
+
+// event listeners in Javascript
+/*
+1. document.getElementById(id)	            --Find an element by element id
+2. document.getElementsByTagName(name)	    --Find elements by tag name
+3. document.getElementsByClassName(name)    --Find elements by class name
+
+4. element.innerHTML ---- new html content	Change the inner HTML of an element
+5. element.attribute ---- new value	Change the attribute value of an HTML element
+6. element.style.property ---- new style	Change the style of an HTML element
+7. element.setAttribute(attribute, value)	Change the attribute value of an HTML element
+
+
+
+
+*/
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i< parent.children.length; i++) {
+      console.log(parent.children[i].innerHTML);;
+       
+    }
+
+
+    // first element child & last element child
+
+    console.log(parent.firstElementChild.innerHTML);
+    console.log(parent.lastElementChild.innerHTML);
+
+
+    //Access parent element by child element
+
+    const child = document.querySelector('.day')
+    console.log(child);
+    console.log(child.parentElement);
+
+    console.log(child.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
+</script>
+</html>
