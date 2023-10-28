@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcf9f9;
+}
+nav{
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.836);
+    padding-left: 400px;
+    display: flex;
+}
+li{
+    padding-left: 50px;
+    list-style-type: none;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.nav-button{
+    /* padding: 10px 15px; */
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.container {
+    width: 575px;
+    height: 625px;
+    border-radius: 20px;
+    background-color: #aeae9b;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+    
+h1{
+    /* margin-left: 120px;  */
+    text-align: center;
+}  
+
+.lastResult {
+    color: white;
+    padding: 7px;
+}
+  
+.guesses {
+    color: rgb(246, 243, 243);
+    padding: 7px;
+}
+   
+button {
+    background-color: #141414;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+  
+#subt {
+    background-color: #161616;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-style: none;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+  
+#guessField {
+    color: #000;
+    width: 270px;
+    height: 50px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 25px;  
+    margin-left: 80px;
+    border: 5px solid #6c6d6d;
+    text-align: center;
+    border-radius: 10px;
+}
+  
+#guess {
+    font-size: 55px;
+    margin-left: 90px;
+    margin-top: 120px;
+    color: #fff;
+}
+  
+.guesses {
+    background-color: #7a7a7a;
+}
+  
+#wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    width: 450px;
+    height: 550px;
+    font-size: 25px;
+} 
+p{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+  
+footer{
+    width: 100vw;
+    height: 4.3vh;
+    background-color: rgb(14, 14, 14);
+    padding-top: 2px;
+    margin-top: 45px;
+    color: #ffffff;
+}
+  
