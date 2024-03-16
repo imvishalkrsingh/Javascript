@@ -1,4 +1,7 @@
 // Strings -- String is a sequence of characters used to represent text.
+// Strings - Strings are for storing text. Strings are written with quotes
+
+
 
 // Create String
 let str = "Vishal Singh "; // Define a string variable
