@@ -12,6 +12,7 @@ for (let i = 0; i <= 100; i++) {
 // Q2. Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
 // In this question, we create a simple guessing game where the user needs to guess a random game number.
 // We use a while loop to repeatedly prompt the user for their guess until they guess the correct number.
+
 let gameNum = 25; // Define the game number
 
 let userNum = prompt("Guess the game number : "); // Prompt the user for their guess
@@ -21,3 +22,4 @@ while (userNum != gameNum) { // Keep prompting until the user guesses the correc
     userNum = prompt("You entered the wrong number. Guess again : ");
 }
 console.log("Congratulations, You entered the right number"); // Display a success message when the user guesses correctly
+console.log("You Won the game.");
