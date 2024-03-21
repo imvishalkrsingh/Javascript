@@ -69,3 +69,24 @@ console.log("Result of addition:", result);
 // Output: Result of addition: 8
 
 
+/*
+Question 5:
+Discuss the concept of scope in JavaScript functions. Explain the difference between global scope and local scope, and how variables declared inside functions are scoped. Provide an example illustrating variable scope within a function and outside it.
+*/
+
+// Global variable
+let globalVar = "I'm global";
+
+function testScope() {
+    // Local variable
+    let localVar = "I'm local";
+
+    console.log(localVar); // Output: I'm local
+    console.log(globalVar); // Output: I'm global
+}
+
+testScope();
+console.log(globalVar); // Output: I'm global
+// console.log(localVar); // Uncommenting this line will result in an error because localVar is not defined outside the function
+
+
