@@ -89,4 +89,27 @@ testScope();
 console.log(globalVar); // Output: I'm global
 // console.log(localVar); // Uncommenting this line will result in an error because localVar is not defined outside the function
 
+/*
+Question 7:
+Explain the concept of higher-order functions in JavaScript. Define what higher-order functions are and provide an example of their usage, including scenarios where they are beneficial. Additionally, discuss the advantages of using higher-order functions in JavaScript programming.
+*/
+
+// Higher-order function example
+function operate(operation, a, b) {
+    return operation(a, b);
+}
+
+// Function to perform addition
+function addition(x, y) {
+    return x + y;
+}
+
+// Function to perform subtraction
+function subtraction(x, y) {
+    return x - y;
+}
+
+// Using operate function with different operations
+console.log("Addition result:", operate(addition, 5, 3)); // Output: Addition result: 8
+console.log("Subtraction result:", operate(subtraction, 7, 2)); // Output: Subtraction result: 5
 
