@@ -113,3 +113,20 @@ function subtraction(x, y) {
 console.log("Addition result:", operate(addition, 5, 3)); // Output: Addition result: 8
 console.log("Subtraction result:", operate(subtraction, 7, 2)); // Output: Subtraction result: 5
 
+/*
+Discuss the concept of recursion in JavaScript functions. Explain what recursion is, how it works, and provide an example of a recursive function. Additionally, highlight the advantages and potential pitfalls of using recursion in JavaScript programming.
+*/
+
+// Recursive function to calculate factorial
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+// Using the factorial function
+console.log("Factorial of 5:", factorial(5)); // Output: Factorial of 5: 120
+
+
