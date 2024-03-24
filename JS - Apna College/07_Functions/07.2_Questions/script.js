@@ -129,4 +129,18 @@ function factorial(n) {
 // Using the factorial function
 console.log("Factorial of 5:", factorial(5)); // Output: Factorial of 5: 120
 
+// Another way for calculating factorial
+
+// Function to calculate factorial using a loop
+function factorial(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+// Using the factorial function
+console.log("Factorial of 5:", factorial(5)); // Output: Factorial of 5: 120
+
 
