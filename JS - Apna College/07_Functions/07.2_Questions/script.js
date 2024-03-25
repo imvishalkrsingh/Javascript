@@ -114,7 +114,7 @@ console.log("Addition result:", operate(addition, 5, 3)); // Output: Addition re
 console.log("Subtraction result:", operate(subtraction, 7, 2)); // Output: Subtraction result: 5
 
 /*
-Discuss the concept of recursion in JavaScript functions. Explain what recursion is, how it works, and provide an example of a recursive function. Additionally, highlight the advantages and potential pitfalls of using recursion in JavaScript programming.
+Q8. Discuss the concept of recursion in JavaScript functions. Explain what recursion is, how it works, and provide an example of a recursive function. Additionally, highlight the advantages and potential pitfalls of using recursion in JavaScript programming.
 */
 
 // Recursive function to calculate factorial
@@ -143,4 +143,39 @@ function factorial(n) {
 // Using the factorial function
 console.log("Factorial of 5:", factorial(5)); // Output: Factorial of 5: 120
 
+console.log("Vishal kumar singh");
 
+/*
+Question 9:
+Write a JavaScript function to determine whether a given string is a palindrome or not. Explain the concept of palindromes, which are strings that read the same forwards and backwards, and provide an example of how to implement the function using basic function concepts. Avoid using advanced array methods or regular expressions.
+*/
+
+// Function to check if a string is a palindrome
+function isPalindrome(str) {
+    // Convert the string to lowercase
+    str = str.toLowerCase();
+    
+    // Define pointers for the start and end of the string
+    let start = 0;
+    let end = str.length - 1;
+    
+    // Loop until the pointers meet
+    while (start < end) {
+        // Compare characters at the current positions
+        if (str[start] !== str[end]) {
+            return false; // If characters don't match, it's not a palindrome
+        }
+        
+        // Move pointers towards the center
+        start++;
+        end--;
+    }
+    
+    // If the loop completes without returning false, it's a palindrome
+    return true;
+}
+
+// Test cases
+console.log(isPalindrome("A man, a plan, a canal, Panama")); // Output: true
+console.log(isPalindrome("racecar")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
