@@ -179,3 +179,22 @@ function isPalindrome(str) {
 console.log(isPalindrome("A man, a plan, a canal, Panama")); // Output: true
 console.log(isPalindrome("racecar")); // Output: true
 console.log(isPalindrome("hello")); // Output: false
+
+/*
+Question 10:
+Describe the concept of function hoisting in JavaScript and how it affects the execution order of functions. Provide an example demonstrating function hoisting in action, including an explanation of how the JavaScript engine handles function declarations and expressions during the hoisting process.
+*/
+
+// Function declaration
+sayHello(); // Output: Hello, world!
+
+function sayHello() {
+    console.log("Hello, world!");
+}
+
+// Function expression
+// sayGoodbye(); // This will throw an error: TypeError: sayGoodbye is not a function
+
+let sayGoodbye = function() {
+    console.log("Goodbye, world!");
+};
