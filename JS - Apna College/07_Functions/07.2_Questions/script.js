@@ -220,3 +220,18 @@ function handleData(data) {
 
 // Using fetchData function with a callback
 fetchData("https://example.com/api/data", handleData);
+
+/*
+Question 12:
+Describe the significance of comments within JavaScript functions. Explain how comments enhance code readability and maintainability, particularly within the context of functions. Provide an example of a function with well-commented code, highlighting its key elements and purpose.
+*/
+
+// Function to calculate the area of a rectangle
+function calculateRectangleArea(length, width) {
+    // Multiply the length by the width to calculate the area
+    return length * width;
+}
+
+// Example usage of the calculateRectangleArea function
+let area = calculateRectangleArea(5, 3);
+console.log("Area of the rectangle:", area); // Output: Area of the rectangle: 15
