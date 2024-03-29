@@ -235,3 +235,18 @@ function calculateRectangleArea(length, width) {
 // Example usage of the calculateRectangleArea function
 let area = calculateRectangleArea(5, 3);
 console.log("Area of the rectangle:", area); // Output: Area of the rectangle: 15
+
+/*
+Explain the concept of return values in JavaScript functions. Describe how return values allow functions to produce results for further computation and how they differ from parameters. Provide an example of a function that returns a value, and demonstrate how to capture and utilize the return value in a practical scenario.
+*/
+
+// Function to calculate the sum of two numbers and return the result
+function sum(a, b) {
+    return a + b; // Return the sum of 'a' and 'b'
+}
+
+// Using the sum function and capturing the return value
+let result = sum(4, 3);
+
+// Displaying the result
+console.log("Sum:", result); // Output: Sum: 7
