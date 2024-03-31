@@ -272,3 +272,22 @@ testScope();
 
 // Accessing global variable outside the function
 console.log(globalVariable); // Output: I'm global
+
+/*
+Write a JavaScript function that reverses a number.
+Example x = 32243;
+*/
+
+function reverseNumber(num) {
+    // Convert number to string, split it, reverse the array, and join it back into a string
+    let reversedString = num.toString().split('').reverse().join('');
+    
+    // Convert the reversed string back to a number
+    let reversedNum = parseInt(reversedString);
+
+    return reversedNum;
+}
+
+// Example usage
+let x = 32243;
+console.log(reverseNumber(x)); // Output: 34223
