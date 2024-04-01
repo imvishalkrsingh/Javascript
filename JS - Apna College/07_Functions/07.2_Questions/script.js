@@ -291,3 +291,26 @@ function reverseNumber(num) {
 // Example usage
 let x = 32243;
 console.log(reverseNumber(x)); // Output: 34223
+
+
+
+/*
+Write a JavaScript function that checks whether a passed string is a palindrome or not?
+A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+*/
+
+function isPalindrome(str) {
+    // Convert the string to lowercase and remove non-alphanumeric characters
+    let alphanumericStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    // Reverse the string
+    let reversedStr = alphanumericStr.split('').reverse().join('');
+
+    // Check if the original and reversed strings are equal
+    return alphanumericStr === reversedStr;
+}
+
+// Example usage
+console.log(isPalindrome("madam")); // Output: true
+console.log(isPalindrome("nurses run")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
