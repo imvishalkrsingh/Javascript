@@ -314,3 +314,21 @@ function isPalindrome(str) {
 console.log(isPalindrome("madam")); // Output: true
 console.log(isPalindrome("nurses run")); // Output: true
 console.log(isPalindrome("hello")); // Output: false
+
+
+/*
+Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+Example string : 'the quick brown fox'
+Expected Output : 'The Quick Brown Fox '
+*/
+
+function capitalizeFirstLetter(str) {
+    return str.replace(/\b\w/g, function(char) {
+        return char.toUpperCase();
+    });
+}
+
+// Example usage:
+var exampleString = 'the quick brown fox';
+var capitalizedString = capitalizeFirstLetter(exampleString);
+console.log(capitalizedString); // Output: 'The Quick Brown Fox'
