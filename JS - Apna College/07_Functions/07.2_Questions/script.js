@@ -332,3 +332,24 @@ function capitalizeFirstLetter(str) {
 var exampleString = 'the quick brown fox';
 var capitalizedString = capitalizeFirstLetter(exampleString);
 console.log(capitalizedString); // Output: 'The Quick Brown Fox'
+
+
+/*
+Write a JavaScript function which returns the n rows by n columns identity matrix.
+*/
+
+function identityMatrix(n) {
+    var matrix = [];
+    for (var i = 0; i < n; i++) {
+        matrix[i] = [];
+        for (var j = 0; j < n; j++) {
+            matrix[i][j] = (i === j) ? 1 : 0;
+        }
+    }
+    return matrix;
+}
+
+// Example usage:
+var n = 4;
+var result = identityMatrix(n);
+console.log(result);
