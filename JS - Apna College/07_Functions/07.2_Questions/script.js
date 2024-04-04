@@ -353,3 +353,35 @@ function identityMatrix(n) {
 var n = 4;
 var result = identityMatrix(n);
 console.log(result);
+
+
+/*
+7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+Example string : 'The quick brown fox'
+Expected Output : 5
+*/
+
+function countVowels(str) {
+    // Convert the string to lowercase to handle both uppercase and lowercase vowels
+    str = str.toLowerCase();
+
+    // Define an array of vowels
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    // Initialize a variable to store the count of vowels
+    let vowelCount = 0;
+
+    // Iterate over each character in the string
+    for (let char of str) {
+        // Check if the character is a vowel and not 'y'
+        if (vowels.includes(char) && char !== 'y') {
+            vowelCount++;
+        }
+    }
+
+    return vowelCount;
+}
+
+// Example usage
+console.log(countVowels("The quick brown fox")); // Output: 5
