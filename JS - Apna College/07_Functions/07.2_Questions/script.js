@@ -385,3 +385,27 @@ function countVowels(str) {
 
 // Example usage
 console.log(countVowels("The quick brown fox")); // Output: 5
+
+
+/*
+11. Write a JavaScript function that takes an array of numbers and finds the second lowest and second greatest numbers, respectively.
+Sample array : [1,2,3,4,5]
+Expected Output : 2,4
+*/
+
+function findSecondLowestAndGreatest(numbers) {
+    // Sort the array in ascending order
+    numbers.sort(function(a, b) {
+        return a - b;
+    });
+
+    // Extract the second lowest and second greatest numbers
+    let secondLowest = numbers[1];
+    let secondGreatest = numbers[numbers.length - 2];
+
+    return [secondLowest, secondGreatest];
+}
+
+// Example usage
+let numbers = [1, 2, 3, 4, 5];
+console.log(findSecondLowestAndGreatest(numbers)); // Output: [2, 4]
