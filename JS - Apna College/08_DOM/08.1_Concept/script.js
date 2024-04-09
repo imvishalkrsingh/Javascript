@@ -16,3 +16,15 @@ var element = document.querySelector(".myClass");
 // Get all elements with a specific class
 var elements = document.querySelectorAll(".myClass");
 
+/*
+Manipulating Elements:
+Once you have a reference to an element, you can manipulate its properties, such as its innerHTML, textContent, style, or classList.
+*/
+// Change the text content of an element
+element.textContent = "New content";
+
+// Add a CSS class to an element
+element.classList.add("newClass");
+
+// Change the background color of an element
+element.style.backgroundColor = "blue";
