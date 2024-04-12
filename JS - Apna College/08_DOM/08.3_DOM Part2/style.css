@@ -11,3 +11,18 @@ body{
     border-radius: 20%;
     padding-top: 20px;
 }
+
+/* #clickMe{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+} */
+
+.content{
+    color: red;
+}
+
+.newClass{
+    background-color: green;
+}
