@@ -7,3 +7,14 @@ div{
     border-radius: 20px;
     padding: 10px;
 }
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
