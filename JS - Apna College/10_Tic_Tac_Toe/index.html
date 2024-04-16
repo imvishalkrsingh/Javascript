@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tack Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
 </head>
 <body>
-    <main>
-        <h1>Tic Tac Toe</h1>
+    <h1>Tic-Tac-Toe</h1> <!-- Title of the game -->
+    <hr> <!-- Horizontal line for visual separation -->
 
+    <!-- Container for displaying messages, initially hidden -->
+    <div class="msg-container hide">
+        <p id="msg">Winner</p> <!-- Paragraph to display messages -->
+        <button id="new-game">New Game</button> <!-- Button to start a new game -->
+    </div>
+
+    <main>
+        <!-- Container for the game board -->
         <div class="container">
+            <!-- Game board with 9 cells represented by buttons -->
             <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+                <button class="box"></button> <!-- Cell 1 -->
+                <button class="box"></button> <!-- Cell 2 -->
+                <button class="box"></button> <!-- Cell 3 -->
+                <button class="box"></button> <!-- Cell 4 -->
+                <button class="box"></button> <!-- Cell 5 -->
+                <button class="box"></button> <!-- Cell 6 -->
+                <button class="box"></button> <!-- Cell 7 -->
+                <button class="box"></button> <!-- Cell 8 -->
+                <button class="box"></button> <!-- Cell 9 -->
             </div>
         </div>
+
+        <button id="reset-btn">Reset Game</button> <!-- Button to reset the game -->
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>

@@ -1,9 +1,71 @@
-*{
+/* Apply CSS reset to remove default margins, paddings, and box-sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: ;
+/* Body styling */
+body {
+    background-color: #548687; /* Set background color */
+    text-align: center; /* Center align text */
+}
+
+/* Container for the game board */
+.container {
+    height: 70vh; /* Set container height to 70% of viewport height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 80px; /* Add top margin */
+}
+
+/* Game board styling */
+.game {
+    height: 50vmin; /* Set game board height to 60% of viewport minimum */
+    width: 60vmin; /* Set game board width to 60% of viewport minimum */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cells */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 1.5vmin; /* Add gap between cells */
+}
+
+/* Individual cell styling */
+.box {
+    height: 15vmin; /* Set cell height */
+    width: 18vmin; /* Set cell width */
+    border-radius: 1rem; /* Apply border radius for rounded corners */
+    border: none; /* Remove border */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+    font-size: 8vmin; /* Set font size */
+    color: #289fe49c; /* Set text color */
+    background-color: #fff; /* Set background color */
+}
+
+/* Button styling */
+#reset-btn,
+#new-game {
+    padding: 1rem; /* Add padding */
+    border-radius: 10px; /* Apply border radius for rounded corners */
+    background-color: #06878a; /* Set background color */
+    font-size: 1.5rem; /* Set font size */
+    border: none; /* Remove border */
+    color: #f7f8fa; /* Set text color */
+}
+
+/* Message styling */
+#msg {
+    color: #ffffc7; /* Set text color */
+    font-size: 6vmin; /* Set font size */
+}
+
+/* Message container styling */
+.msg-container {
+    height: 8vmin; /* Set container height */
+}
+
+/* Hide class to hide elements */
+.hide {
+    display: none; /* Hide element */
 }
