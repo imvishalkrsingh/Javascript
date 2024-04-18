@@ -1,0 +1,29 @@
+@font-face {
+  font-family: vanguard cf;
+  src: url(./Vanguard_CF.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 125, 80);
+}
+
+h1{
+  font-size: 10vw;
+  color: #fff;
+
+  font-family: vanguard cf;
+}
