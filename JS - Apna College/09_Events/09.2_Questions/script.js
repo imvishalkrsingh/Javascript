@@ -16,3 +16,16 @@ btn.addEventListener('click', (event) => {
     console.log('Mouse coordinates:', event.clientX, event.clientY);
 });
 
+// Question 3: Explain the concept of event propagation in JavaScript. How does event propagation work, and what are the phases of event propagation?Code Example:
+
+let outer = document.getElementById('outer');
+let inner = document.getElementById('inner');
+
+outer.addEventListener('click', () => {
+    console.log('Outer div clicked');
+});
+
+inner.addEventListener('click', () => {
+    console.log('Inner div clicked');
+    event.stopPropagation(); // Stops the event from bubbling up to the outer div
+});
