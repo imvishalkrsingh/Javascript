@@ -29,3 +29,27 @@ inner.addEventListener('click', () => {
     console.log('Inner div clicked');
     event.stopPropagation(); // Stops the event from bubbling up to the outer div
 });
+
+
+/*
+3. Write a JavaScript function that changes the background color of an element when a mouse enters it.
+*/
+
+function changeBackgroundColorOnMouseEnter(elementId, newColor) {
+    let element = document.getElementById(elementId);
+    
+    // Add event listener for mouseenter event
+    element.addEventListener('mouseenter', () => {
+        // Change the background color when mouse enters the element
+        element.style.backgroundColor = newColor;
+    });
+
+    // Add event listener for mouseleave event to revert back to original color
+    element.addEventListener('mouseleave', () => {
+        // Revert back to the original background color when mouse leaves the element
+        element.style.backgroundColor = '';
+    });
+}
+
+// Example usage:
+changeBackgroundColorOnMouseEnter('myElement', 'lightblue');
