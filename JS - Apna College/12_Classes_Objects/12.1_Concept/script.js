@@ -112,12 +112,12 @@ class Person {
 
 class Engineer extends Person{
 
-    constructor(branch){
-        this.branch = branch;
-    }
-    work(){
-        console.log("solve problems, build something");
-    }
+    // constructor(branch){
+    //     this.branch = branch;
+    // }
+    // work(){
+    //     console.log("solve problems, build something");
+    // }
 }
 
 let shradhaObj = new Engineer();
@@ -140,4 +140,58 @@ super (args) // call Parent's constructor
 
 super.parentMethod(args)
 */
+
+// Let's Practice
+
+/*
+Q1. You are creating a website for your college. Create a class user with 2 properties, name and email. It also has a method called viewData() that allows user to view website data.
+*/
+let DATA = 'Secret information';
+
+class User {
+   constructor(name,email){
+    this.name = name;
+    this.email = email;
+   }
+
+   viewData(){
+    console.log("data = ", DATA);
+   }
+}
+
+let student1 = new User('vishal', 'vishalkumarsingh162@gmail.com');
+
+let student2 = new User('aman', 'amansingh5114@gmail.com');
+
+console.log(student1);
+console.log(student1.viewData);
+console.log(student2);
+
+/*
+Q2. Create a new class called Admin which inherits from user. Add a new method called editDaata to admin that allows it to edit website data.
+*/
+
+class Admin extends User {
+    editData(){
+        DATA = "Some new value";
+    }
+}
+
+
+let admin1 = new Admin('admin', 'admin@college.com');
+console.log(admin1);
+
+// Error Handling
+
+// try-catch
+
+/*
+try{
+    ....normal code
+}
+catch (err){ err is error code
+    ...handling error
+}
+*/
+
 
