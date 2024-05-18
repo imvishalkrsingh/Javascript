@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback, Promise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Callbacks, Promise & Asynchronous</h1>
+
+    <h3>Sync in js</h3>
+
+    <p>Synchronous means the code runs in a particular sequence of instructions given in the program. Each instructions waits for the previous instructions to complete its executions.</p>
+
+    <hr>
+
+    <h3>Asynchronous</h3>
+    <p>Due to Synchronous programming, sometimes important instructions get blocked due to some previous instructions, which causes a delay in the UI. Asynchronous code execution allow to execute next instructions immediately and doesn't block the flow.</p>
+    
+
+    <hr>
+
+    <h3>Callbacks</h3>
+    <p>A Callbacks is a function passed as an argument to another function.</p>
+
+    <hr>
+
+    <h3>Callback Hell</h3>
+    <p>Callback Hell : Nested callbacks stacked below one another forming a pyramid structure. (Pyramid of DOOM)</p>
+
+    <p>This style of programming becomes difficult to understand & manage.</p>
+
+
+    <hr>
+
+    <h3>Promises</h3>
+    <p>Promise is for "eventual" completion of task. It is an object in jS.
+        <br>
+        It is a solution to callback hell.
+    </p>
+
+    <p>let promise = new Promise ((resolve, reject) => {.....})
+        <br>
+       ** function with 2 handlers : resolve or reject
+        <br>
+       ** resolve and reject are callbacks provided by JS
+    </p> 
+
+    <ul>A javascript promise object can be : </ul>
+    <li>Pending : the result is undefined.</li>
+    <li>Resolved : The result is a value(fullfiled)..... resolve (result) </li>
+    <li>Rejected : The result is an error object.... reject (error) </li>
+
+
+    <li>Promise has state (pending, fullfilled) & some result (result for resolve & error for reject).</li>
+
+    <br>
+
+    <ol>Promise has two state : </ol>
+    <li>.then() & .catch()</li>
+    <li>promise.then((res) => {} )</li>
+    <li>promise.catch((err) => {} )</li>
+
+<script src="script.js"></script>
+</body>
+</html>
